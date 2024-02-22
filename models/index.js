@@ -3,6 +3,7 @@
 const User = require("./user"); //require the model
 const Post = require("./post");
 const Comment = require('./comment')
+const Asoiaf = require('./asoiaf')
 
 async function init() {
   await User.sync(); // sync the model
@@ -17,5 +18,6 @@ module.exports = {
   User, // export the model
   // also export any extra models here
   Post,
-  Comment
+  Comment,
+  Asoiaf
 };

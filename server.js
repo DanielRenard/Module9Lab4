@@ -17,8 +17,11 @@ app.use('/api/posts', postRoutes);
 let commentRoutes = require('./routes/commentRoutes');
 app.use('/api/comments', commentRoutes);
 
+let asoiafRoutes = require('./routes/asoiafRoutes');
+app.use('/api/asoiafs', asoiafRoutes);
+
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to my MongoDB application." });
+  res.json({ message: "Welcome to my MySQL application." });
 });
 
 // set port, listen for requests
