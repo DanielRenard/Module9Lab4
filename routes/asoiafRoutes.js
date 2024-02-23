@@ -6,7 +6,7 @@ const Controllers = require("../controllers");
 // (the prefix from server.js)
 // http://localhost:8081/api/asoiafs = GET all asoiafs
 router.get("/", (req, res) => {
-  Controllers.asoiafController.getAsoiafs(res);
+  Controllers.asoiafController.getAsoiafs(req, res);
 });
 
 // matches POST requests sent to /api/asoiafs/create
